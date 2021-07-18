@@ -1,5 +1,5 @@
 ---
-title: Titanic Survival
+title: Titanic Survival in Real Time
 emoji: 🚀
 colorFrom: red
 colorTo: green
