@@ -1,7 +1,7 @@
 ---
 title: Titanic Survival in Real Time
 emoji: 🚀
-colorFrom: red
+colorFrom: blue
 colorTo: green
 sdk: gradio
 sdk_version: 3.23.1b3
