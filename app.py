@@ -60,8 +60,8 @@ def predict_survival(sex, age, fare):
     return {'Perishes': float(pred[0]), 'Survives': float(pred[1])}
     
 sex = gr.Radio(['female', 'male'], label="Sex", value="male")
-age = gr.Slider(minimum=0, maximum=120, default=22, label="Age")
-fare = gr.Slider(minimum=0, maximum=200, default=100, label="Fare (british pounds)")
+age = gr.Slider(minimum=0, maximum=120, value=22, label="Age")
+fare = gr.Slider(minimum=0, maximum=200, value=100, label="Ticket price")
 
 gr.Interface(predict_survival, [sex, age, fare], "label", live=True, thumbnail="https://raw.githubusercontent.com/gradio-app/hub-titanic/master/thumbnail.png", analytics_enabled=False,
     theme="soft", title="Surviving the Titanic", description="What is the probability that a passenger on the Titanic would survive the famous wreck? It depends on their demographics as this live interface demonstrates.").launch();
